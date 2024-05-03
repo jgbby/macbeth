@@ -25,7 +25,7 @@ for cf, pos in zip(cfs, starting_positions['positions']):
     start_dict[cf] = pos #TODO: Ordering!
 
 # Make changes to local mycrazyflies.yaml
-with open(os.path.expanduser('~/ros2_ws/src/Brown-crazyswarm2/crazyflie/config/crazyflies.yaml'), 'r') as f:
+with open('/home/vboxuser/ros2_ws/src/Brown-crazyswarm2/crazyflie/config/crazyflies.yaml', 'r') as f:
     all_crazyflies = yaml.safe_load(f)
 
 # TODO: All CFS have to be commented in...

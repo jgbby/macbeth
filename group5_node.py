@@ -93,14 +93,14 @@ class worker_node(Node):
         # Block Name: CF1 To Wall
         start_time = 16.55
         self.timeHelper.sleepUntil(start_time)
-        goto_duration(groupState, -5.5,2,2,5)
+        goto_duration(groupState, -4.5,2,2,5)
 
         # Block Name: Down 0.5 & Hover
         start_time = 16.6
         self.timeHelper.sleepUntil(start_time)
         goto_duration_relative(groupState, 0, 0, -0.5, 2)
-        goto_duration_relative(groupState, 0, 0, 1, 4)
-        goto_duration_relative(groupState, 0, 0, -1, 3.5)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 3.5)
 
         # Block Name: RED LIGHT ON
         start_time = 26.2
@@ -108,46 +108,38 @@ class worker_node(Node):
         setLEDColorFromHex(groupState, "#ff002b")
 
         # Hover
-        goto_duration_relative(groupState, 0, 0, 1, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
 
         # Block Name: LONG HOVER
         start_time = 31.563999023437503
         self.timeHelper.sleepUntil(start_time)
         setLEDColorFromHex(groupState, "#0062ff")
-        goto_duration_relative(groupState, 0, 0, -1, 4)
-        goto_duration_relative(groupState, 0, 0, 1, 4)
-        goto_duration_relative(groupState, 0, 0, -1, 4)
-        goto_duration_relative(groupState, 0, 0, 1, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
 
-        # Premature landing
-        start_time = 60. 
+        # Block Name: LAND
+        start_time = 120.
         self.timeHelper.sleepUntil(start_time)
         land(groupState, 0,3)
-
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-
-        # # Block Name: LONG HOVER
-        # start_time = 71.572001953125
-        # self.timeHelper.sleepUntil(start_time)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # Block Name: LAND
-        # start_time = 116.422001953125
-        # self.timeHelper.sleepUntil(start_time)
-        # land(groupState, 0,3)
 
         
         self.done = True

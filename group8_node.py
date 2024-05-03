@@ -87,16 +87,16 @@ class worker_node(Node):
         # Block Name: HOVER1
         start_time = 3.02
         self.timeHelper.sleepUntil(start_time)
-        goto_duration_relative(groupState, 0, 0, 0.25, 1)
-        goto_duration_relative(groupState, 0, 0, -1, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 1)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
 
         # Block Name: HOVER2
         start_time = 8.04
         self.timeHelper.sleepUntil(start_time)
-        goto_duration_relative(groupState, 0, 0, 1, 4)
-        goto_duration_relative(groupState, 0, 0, -1, 4)
-        goto_duration_relative(groupState, 0, 0, 1, 4)
-        goto_duration_relative(groupState, 0, 0, -1, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
 
         # Block Name: RED LIGHT ON
         start_time = 26.5
@@ -106,48 +106,45 @@ class worker_node(Node):
         # Block Name: HOVER
         start_time = 27
         self.timeHelper.sleepUntil(start_time)
-        goto_duration_relative(groupState, 0, 0, 1, 4)
-        goto_duration_relative(groupState, 0, 0, -1, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
 
         # Change Purple
         start_time = 35.02
         self.timeHelper.sleepUntil(start_time)
         setLEDColorFromHex(groupState, "#7a00b3")
-
-        # Block Name: LONG HOVER
-        goto_duration_relative(groupState, 0, 0, 1, 4)
-        goto_duration_relative(groupState, 0, 0, -1, 4)
-        goto_duration_relative(groupState, 0, 0, 1, 4)
-        goto_duration_relative(groupState, 0, 0, -1, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
 
         # Premature landing
-        start_time = 60.0
-        self.timeHelper.sleepUntil(start_time)
-        land(groupState, 0, 3)
+        # start_time = 60.0
+        # self.timeHelper.sleepUntil(start_time)
+        # land(groupState, 0, 3)
 
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # # Block Name: LONG HOVER
-        # start_time = 71.5939990234375
-        # self.timeHelper.sleepUntil(start_time)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # # Block Name: LAND
-        # start_time = 116.482001953125
-        # self.timeHelper.sleepUntil(start_time)
-        # land(groupState, 0,3)
+        
+        # Block Name: LAND
+        start_time = 120.
+        self.timeHelper.sleepUntil(start_time)
+        land(groupState, 0,3)
 
         self.done = True
 

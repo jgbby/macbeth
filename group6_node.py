@@ -93,7 +93,7 @@ class worker_node(Node):
         # Block Name: CF2 To Wall
         start_time = 18.
         self.timeHelper.sleepUntil(start_time)
-        goto_duration(groupState, -5.5,0,2,4)
+        goto_duration(groupState, -4.5,0,2,4)
 
         # Block Name: Down 0.5 & Hover
         start_time = 22.02
@@ -115,40 +115,34 @@ class worker_node(Node):
         start_time = 32.5839990234375
         self.timeHelper.sleepUntil(start_time)
         setLEDColorFromHex(groupState, "#7a00b3")
-        goto_duration_relative(groupState, 0, 0, 1, 4)
-        goto_duration_relative(groupState, 0, 0, -1, 4)
-        goto_duration_relative(groupState, 0, 0, 1, 4)
-        goto_duration_relative(groupState, 0, 0, -1, 4)
 
-        # Premature landing
-        start_time = 60. 
+        # 21 * 4
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+        goto_duration_relative(groupState, 0, 0, 0.5, 4)
+        goto_duration_relative(groupState, 0, 0, -0.5, 4)
+
+        # Block Name: LAND
+        start_time = 120.
         self.timeHelper.sleepUntil(start_time)
-        print(f"[GROUP6] LANDING")
         land(groupState, 0,3)
-
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # # Block Name: LONG HOVER
-        # start_time = 72.6139990234375
-        # self.timeHelper.sleepUntil(start_time)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,1,0.25)
-        # goto_velocity_relative_position(groupState, 0,0,-1,0.25)
-        # # Block Name: LAND
-        # start_time = 116.452001953125
-        # self.timeHelper.sleepUntil(start_time)
-        # land(groupState, 0,3)
 
         
         self.done = True

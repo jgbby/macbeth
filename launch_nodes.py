@@ -62,22 +62,22 @@ def main():
     nodes.append(group7_node.worker_node(cfs, len(nodes), 8))
 
 
-    # import group8_node
-    # cfs = []
-    # cfs.append(crazyflies[4])
-    # nodes.append(group8_node.worker_node(cfs, len(nodes), 9))
+    import group8_node
+    cfs = []
+    cfs.append(crazyflies[4])
+    nodes.append(group8_node.worker_node(cfs, len(nodes), 9))
 
 
-    # import group9_node
-    # cfs = []
-    # cfs.append(crazyflies[5])
-    # nodes.append(group9_node.worker_node(cfs, len(nodes), 10))
+    import group9_node
+    cfs = []
+    cfs.append(crazyflies[5])
+    nodes.append(group9_node.worker_node(cfs, len(nodes), 10))
 
 
-    # import group10_node
-    # cfs = []
-    # cfs.append(crazyflies[6])
-    # nodes.append(group10_node.worker_node(cfs, len(nodes), 11))
+    import group10_node
+    cfs = []
+    cfs.append(crazyflies[6])
+    nodes.append(group10_node.worker_node(cfs, len(nodes), 11))
 
 
     # Launch all nodes

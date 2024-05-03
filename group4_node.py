@@ -87,17 +87,15 @@ class worker_node(Node):
         # TIME = 32
 
         # Block Name: Ghost Cross Left
-        # start_time = 93.99
+        start_time = 93.99
         # start_time = 32.02 
-        # self.timeHelper.sleepUntil(start_time)
-        # goto_duration_relative(groupState, 0, 1.5, 0, 3)        # (1, 1, 2)
-        # goto_duration_relative(groupState, -5, 0, 0, 10)        # (-4, 1, 2)
+        self.timeHelper.sleepUntil(start_time)
+        goto_duration_relative(groupState, 0, 1.5, 0, 3)        # (1, 1, 2)
+        goto_duration_relative(groupState, -4, 0, 0, 10)        # (-4, 1, 2)
 
         # # Block Name: LAND
-        # start_time = 116.422001953125
-        # self.timeHelper.sleepUntil(start_time)
-
-        # TODO: PREMATURE LANDING
+        start_time = 120.
+        self.timeHelper.sleepUntil(start_time)
         land(groupState, 0,3)
 
         
