@@ -147,14 +147,14 @@ def enableHighLevelCommander(cf):
 ###
 
 def setLEDColorFromHex(groupState, hex):
-    # return
+    return
     crazyflies = groupState.crazyflies
     rgb = ImageColor.getcolor(hex, "RGB")
     for cf in crazyflies:
         cf.setLEDColor(*rgb)
 
 def setLEDColor(groupState, r, g, b):
-    # return
+    return
     crazyflies = groupState.crazyflies
     for cf in crazyflies:
         cf.setLEDColor(r, g, b)

@@ -18,10 +18,10 @@ all:
     ring:
       effect: 7
       solidBlue: 255
-      solidGreen: 255
-      solidRed: 255
+      solidGreen: 0
+      solidRed: 0
     stabilizer:
-      controller: 1
+      controller: 2
       estimator: 2
   print_latency: true
   unicasts:
@@ -111,38 +111,36 @@ robot_types:
       dynamics: default
       enabled: false
       marker: painter_frame
-    posCtlPid:
-      thrustBase: 29491
 robots:
-  cf18:
-    enabled: true
-    initial_position:
-    - 2
-    - 2
-    - 0
-    type: cf21_single_marker
-    uri: radio://*/100/2M/E7E7E7E712
-  cf24:
-    enabled: true
-    initial_position:
-    - 0
-    - 2
-    - 0
-    type: cf21_single_marker
-    uri: radio://*/100/2M/E7E7E7E718
-  cf33:
+  cf1:
     enabled: true
     initial_position:
     - 2.5
-    - -2.5
+    - 2.5
     - 0
-    type: cf21_single_marker
-    uri: radio://*/100/2M/E7E7E7E721
-  cf45:
+    type: cf21_m1
+    uri: radio://*/80/2M/E7E7E7E701
+  cf2:
     enabled: true
     initial_position:
-    - -2
+    - 1.5
     - 2
     - 0
     type: cf21_single_marker
-    uri: radio://*/100/2M/E7E7E7E72D
+    uri: radio://*/120/2M/E7E7E7E702
+  cf3:
+    enabled: true
+    initial_position:
+    - -0.5
+    - 2
+    - 0
+    type: cf21_m3
+    uri: radio://*/120/2M/E7E7E7E703
+  cf4:
+    enabled: true
+    initial_position:
+    - -2.5
+    - 2
+    - 0
+    type: cf21_m4
+    uri: radio://*/80/2M/E7E7E7E704

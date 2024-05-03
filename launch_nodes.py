@@ -38,34 +38,34 @@ def main():
     cfs = []
 
     #   -----------Insert Nodes Here----------- 
-    # import group4_node
-    # cfs = []
-    # cfs.append(crazyflies[0])
-    # nodes.append(group4_node.worker_node(cfs, len(nodes), 5))
+    import group4_node
+    cfs = []
+    cfs.append(crazyflies[0])
+    nodes.append(group4_node.worker_node(cfs, len(nodes), 5))
 
 
     import group5_node
     cfs = []
-    cfs.append(crazyflies[0])
+    cfs.append(crazyflies[1])
     nodes.append(group5_node.worker_node(cfs, len(nodes), 6))
 
 
     import group6_node
     cfs = []
-    cfs.append(crazyflies[1])
+    cfs.append(crazyflies[2])
     nodes.append(group6_node.worker_node(cfs, len(nodes), 7))
 
 
     import group7_node
     cfs = []
-    cfs.append(crazyflies[2])
+    cfs.append(crazyflies[3])
     nodes.append(group7_node.worker_node(cfs, len(nodes), 8))
 
 
-    import group8_node
-    cfs = []
-    cfs.append(crazyflies[3])
-    nodes.append(group8_node.worker_node(cfs, len(nodes), 9))
+    # import group8_node
+    # cfs = []
+    # cfs.append(crazyflies[4])
+    # nodes.append(group8_node.worker_node(cfs, len(nodes), 9))
 
 
     # import group9_node
@@ -80,8 +80,6 @@ def main():
     # nodes.append(group10_node.worker_node(cfs, len(nodes), 11))
 
 
-
-    
     # Launch all nodes
     return launch(nodes)
 
